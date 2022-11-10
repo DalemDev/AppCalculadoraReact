@@ -1,0 +1,41 @@
+:root{
+  --color-negro: #1B262C;
+  --color-blanco: #BBE1FA;
+  --color-azul-oscuro: #0F4C75;
+  --color-azul-claro: #3282B8;
+  --hover-boton: #2b6286; 
+  --hover-operador: #9abfd7;
+}
+
+.boton-contenedor{
+  height: 83px;
+  display: flex;
+  /* longitud flexible, cuanto se puedo encoger o cuanto se puede expandir en base al espacio disponible al colocar 1 1 le decimos que se distribuya el espacio de forma equitativa osea el mismo ancho y altura */
+  flex: 1 1; 
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 38px;
+  background-color: var(--color-azul-claro);
+  color: var(--color-negro);
+  border-radius: 25px;
+  border: 2px solid var(--color-blanco);
+  margin: 4px;
+  cursor: pointer;
+  user-select: none;
+  transition: background .5s ease;
+}
+
+.boton-contenedor:hover{
+  background-color: var(--hover-boton);
+}
+
+.operador{
+  background-color: var(--color-blanco);
+  color: var(--color-negro);
+  transition: background .5s ease;
+}
+
+.operador:hover{
+  background-color: var(--hover-operador);
+}

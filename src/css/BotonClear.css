@@ -1,0 +1,27 @@
+:root{
+  --clear: #AF0404;
+  --hover-clear: #901313;
+  --color-blanco: #BBE1FA;
+}
+
+.boton-clear{
+  height: 60px;
+  font-size: 1.6em;
+  display: flex;
+  /* flex 1 = ocupe todo el tamaño disponible */
+  flex: 1; 
+  background-color: var(--clear);
+  margin-top: 8px;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color: var(--color-blanco);
+  border-radius: 45px;
+  border: 2px solid var(--color-blanco);
+  cursor: pointer;
+  transition: background .5s ease;
+}
+
+.boton-clear:hover{
+  background-color: var(--hover-clear);
+}
